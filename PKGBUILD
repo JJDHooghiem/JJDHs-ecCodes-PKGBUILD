@@ -4,7 +4,7 @@
 # python 2 removed as a dependency 
 
 pkgname=eccodes
-pkgver=2.19.0
+pkgver=2.19.1
 _attnum=45757960
 pkgrel=1
 pkgdesc="ECMWF decoding library for GRIB, BUFR and GTS"
@@ -16,8 +16,9 @@ optdepends=('libaec: for compression' 'jasper: as an alternative to openjpeg')
 makedepends=('gcc-fortran' 'python' 'python-numpy' 'cmake')
 conflicts=('grib_api' 'libbufr-ecmwf')
 source=(http://software.ecmwf.int/wiki/download/attachments/${_attnum}/${pkgname}-${pkgver}-Source.tar.gz)
-md5sums=('b07593db3a6dee04559360158ff2b79f')
+md5sums=('29d13f15fae35f9da3f30a6787158646')
 
+  
 build() {
   cd "$srcdir"/${pkgname}-${pkgver}-Source
   sed -i 's/image.inmem_.*=.*1;//' src/grib_jasper_encoding.c
