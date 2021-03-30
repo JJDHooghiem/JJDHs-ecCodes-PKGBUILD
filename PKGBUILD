@@ -1,12 +1,10 @@
-# Original PKGBUILD from Graziano Giuliani taken from the AUR 
 # My own build 
 # main changes to the orginal are pkgver and build flags 
-# python 2 removed as a dependency 
 
 pkgname=eccodes
-pkgver=2.20.0
+pkgver=2.21.0
 _attnum=45757960
-pkgrel=2
+pkgrel=1
 pkgdesc="ECMWF decoding library for GRIB, BUFR and GTS"
 arch=('i686' 'x86_64')
 url="https://software.ecmwf.int/wiki/display/ECC/ecCodes+Home"
@@ -16,8 +14,7 @@ optdepends=('libaec: for compression' 'jasper: as an alternative to openjpeg')
 makedepends=('gcc-fortran' 'cmake')
 conflicts=('grib_api' 'libbufr-ecmwf')
 source=(http://software.ecmwf.int/wiki/download/attachments/${_attnum}/${pkgname}-${pkgver}-Source.tar.gz)
-md5sums=('41bebcc6e946534d42e017406df5b65c')
-
+sha512sums=('f2ba8361b99800646a92f5f5beb7ec2facf2ee3b8a3f7985d9681a23b2faae778004c8c688ebe4b3a8492e99c76422c66ecc8943d12d3342d5bc1d38362ccf06')
   
 build() {
   cd "$srcdir"/${pkgname}-${pkgver}-Source
