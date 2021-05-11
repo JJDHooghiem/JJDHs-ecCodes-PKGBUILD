@@ -1,9 +1,8 @@
-# ECMWF ecCodes PKGBUILD for my Arch Linux machine 
-Original PKGBUILD from Graziano Giuliani taken from the AUR.
-My own build, main changes to the orginal are 
+# ECMWF ecCodes PKGBUILD 
 
-`pkgver`
+ECMWF [eccodes install webpage](https://confluence.ecmwf.int/display/ECC/ecCodes+installation)
 
-to be up to date with the latest version. 
-Also some build flags are changes so that it compiles with gcc 10. Finally,
-python 2 is removed as a dependency. 
+Original PKGBUILD taken from the [AUR](https://aur.archlinux.org/packages/eccodes/)
+
+
+
